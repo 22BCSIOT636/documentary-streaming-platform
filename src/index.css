@@ -1,0 +1,213 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Merriweather", sans-serif;
+}
+
+
+.neumorphism {
+    background-color: #ffffff; /* Adjust based on your theme's background */
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #bebebe,
+               -5px -5px 10px #ffffff;
+  }
+  
+  .neumorphism:hover {
+    box-shadow: 2px 2px 5px #bebebe,
+               -2px -2px 5px #ffffff;
+  }
+
+body {
+  @apply bg-[#f6f6f6];
+}
+
+.dark body {
+  @apply bg-[#222222] text-white transition-all delay-300;
+}
+
+.dark .movies-wrapper-title{
+  @apply text-[#f6f6f6] hover:text-gray-300 transition-all delay-300;
+}
+
+.movies-wrapper-title {
+  @apply  text-gray-800 hover:text-gray-700
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.movie-details-content-container, .tv-details-content-container {
+  background: rgba( 0, 0, 0, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(3, 3, 12, 0.75);
+  backdrop-filter: blur( 12.5px );
+  -webkit-backdrop-filter: blur( 12.5px );
+}
+
+.movie-details-content-container, .tv-details-content-container {
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+  backdrop-filter: blur(10px); /* Blur effect for background */
+  /* border-radius: 15px; Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+  overflow: hidden; /* Ensures the child elements adhere to the border-radius */
+}
+
+.movie-info h1, .tv-info h1 {
+  color: transparent; /* A gold-like color for titles */
+  -webkit-text-stroke: 1px #ffffff;
+
+  margin-bottom: 10px; /* Spacing after the title */
+}
+
+.stars {
+  width: fit-content;
+}
+
+.stars i{
+  color: #E3BA22;
+  /* opacity: .7; */
+}
+
+.stars:hover > i{
+  /* opacity: 1; */
+  color: #e3b922cc;
+
+}
+
+.movie-info p, .movie-info div {
+  /* color: transparent; White text color */
+  /* text-shadow: 0px 0px 0px rgba(255,255,255,0.8); */
+  /* -webkit-text-stroke: 1px #ffffff; */
+  /* font-weight: 900; */
+/* line-height: 1em; */
+  /* margin-bottom: 8px; Consistent spacing between paragraphs */
+  line-height: 1.5; /* Improved line spacing for readability */
+}
+
+/* .tagline {
+ */
+/* } */
+
+.movie-info .overview {
+  /* color: #bebebe; */
+  text-align: left;
+  line-height: 1.5; /* Italicize the overview for emphasis */
+}
+
+.movie-info .rating, .tv-info .rating {
+  font-weight: bold; /* Make rating stand out */
+  color: #E3BA22; /* A green-like color for ratings */
+}
+
+.genres span {
+  /* color: #; */
+  border-radius: 18px;
+  margin: 4px;
+  padding: 6px 8px;
+  font-size: .7rem;
+  border-radius: 24px;
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(205, 206, 209, 0.17);
+  backdrop-filter: blur( 0px );
+  -webkit-backdrop-filter: blur( 0px );
+}
+
+
+
+/* Additional hover effects for interactive elements (if any) */
+.movie-info a {
+  color: #FF5722; /* A bright color for links */
+  text-decoration: none; /* No underline */
+}
+
+.movie-info a:hover {
+  text-decoration: underline; /* Underline on hover for links */
+}
+
+.active {
+  /* @apply bg-cyan-600 ; */
+  transition: .3s ease-in-out;
+  /* transform: scale(  1.1); */
+  border-bottom: 2px solid cyan;
+}
+
+
+/* .episode-list */
+
+.episode-list::-webkit-scrollbar {
+  width: 6px;
+  height:64px;
+}
+.episode-list::-webkit-scrollbar-button {
+  width: 26px;
+  height: 100vh;
+}
+.episode-list::-webkit-scrollbar-thumb {
+  background: #2b2b2bab;
+  border: 1px solid #ffffff;
+  border-radius: 31px;
+}
+.episode-list::-webkit-scrollbar-thumb:hover {
+  background: #2b2b2bab;
+}
+.episode-list::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+.episode-list::-webkit-scrollbar-track {
+  background: #cacaca;
+  border: 1px solid #ffffff;
+  border-radius: 82px;
+}
+.episode-list::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+.episode-list::-webkit-scrollbar-track:active {
+  background: #666666;
+}
+.episode-list::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+
+/* body */
+body::-webkit-scrollbar {
+  width: 8px;
+  height:100vh;
+}
+body::-webkit-scrollbar-button {
+  width: 32px;
+  height: 100vh;
+}
+body::-webkit-scrollbar-thumb {
+  background: #2b2b2bab;
+  border: 1px solid #ffffff;
+  border-radius: 31px;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: #2b2b2bab;
+}
+body::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+body::-webkit-scrollbar-track {
+  background: #cacaca;
+  border: 1px solid #ffffff;
+  border-radius: 82px;
+}
+body::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+body::-webkit-scrollbar-track:active {
+  background: #666666;
+}
+body::-webkit-scrollbar-corner {
+  background: transparent;
+}
