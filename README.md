@@ -1,17 +1,17 @@
-# React Movie & TV Show Streaming App
+# Documentary Streaming Platform
 
 ## Overview
 
-This project is a React-based web application that utilizes The Movie Database (TMDB) API to showcase a wide range of movies and TV shows. It's designed with responsiveness in mind, using Tailwind CSS for styling and Redux Toolkit for efficient state management. Users can explore different categories, including trending, top-rated, and detailed seasonal information for TV shows.
+This project is a React-based web application that utilizes The Movie Database (TMDB) API to showcase a wide range of documentaries. The platform allows users to explore different genres of documentaries, view detailed information about each documentary, and stream them directly on the platform. The application is built with responsive design principles, using Tailwind CSS for styling and Redux Toolkit for efficient state management.
 
 ## Features
 
-- **Dynamic Dashboard**: A central hub showcasing movies and TV shows with options to filter by category.
-- **Detailed View**: Clicking on a movie or TV show card opens a detailed page with extensive information, such as cast, genre, ratings, and episode details for TV shows.
-- **Responsive Design**: Built with Tailwind CSS, the application is fully responsive and optimized for various screen sizes.
-- **State Management**: Utilizes Redux Toolkit for managing application state, enhancing the performance and scalability.
-- **Navigation**: Implements React Router for seamless and intuitive navigation throughout the application.
-- **Automatic Scrolling**: Featured sections auto-scroll, improving user interaction and engagement.
+- **Dynamic Dashboard**: A central hub displaying documentaries in various categories, such as trending, top-rated, and genres.
+- **Detailed View**: Clicking on a documentary card opens a detailed page with information like cast, genre, ratings, and a link to the documentary video.
+- **Responsive Design**: The application is fully responsive, optimized for both desktop and mobile screens, and built using Tailwind CSS.
+- **State Management**: Uses Redux Toolkit for managing global state, enabling smooth data flow and efficient component re-rendering.
+- **Navigation**: Implements React Router for seamless and intuitive navigation across pages.
+- **Video Streaming**: Leverages the TMDB API to stream documentary videos directly from the platform.
 
 ## Getting Started
 
@@ -26,11 +26,27 @@ Ensure you have the following installed:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/M-YasirGhaffar/React-movies-and-tv-shows-streaming-web-app
+   git clone https://github.com/your-username/documentary-streaming-platform
+
+
+## Getting Started
+
+### Prerequisites
+
+Ensure you have the following installed:
+
+- Node.js
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/Madhav16062004/documentary-streaming-platform
    ```
 2. Navigate to the project directory:
    ```
-   cd React-movies-and-tv-shows-streaming-web-app
+   cd documentary-streaming-platform
    ```
 3. Install dependencies:
    ```
